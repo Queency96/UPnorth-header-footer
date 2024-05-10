@@ -1,0 +1,194 @@
+/* importing custom font */
+@font-face {
+  font-family: 'Queen of Camelot';
+  src: url(./Queen\ of\ Camelot\ 2.0.ttf), format('opentype');
+}
+
+/* removing margin and padding from the whole document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling Nav-Bar */
+.navbar {
+  background-color: transparent;
+
+  /* Kindly remove this line of code, its was there so u can see the nav bar link text so well*/
+  background-color: red;
+}
+
+.brandName {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.up-logo {
+  font-family: 'Queen of Camelot';
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #008a02;
+}
+
+small {
+  font-family: 'Queen of Camelot';
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: last baseline;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.nav-links ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 2px;
+}
+
+.donate-now a {
+  padding: 15px 20px;
+  background-color: #008a02;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.menuToggle {
+  background-color: transparent;
+  border: none;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.m-nav-link {
+  line-height: 30px;
+  width: 200px;
+
+  /* kindly remove this background colour, its temporary there to make the mobile menu visible  */
+  background-color: aqua;
+
+  margin-left: 0px;
+  padding-left: 0px;
+  display: none;
+}
+
+.m-nav-link ul {
+  list-style: none;
+}
+
+.m-nav-link a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.m-nav-link li:hover {
+  background-color: #ffffff;
+}
+
+.m-nav-link li:hover a {
+  color: #008a02;
+}
+
+/* footer */
+
+.col {
+  margin: 20px 30px;
+  color: #ffffff;
+}
+
+.footer-col-one .brandName {
+  justify-content: left;
+  margin: 20px 30px;
+}
+
+.col a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.footer-social-icon i {
+  font-size: 24px;
+}
+
+.footer-social-icon .fa-youtube,
+.footer-social-icon .fa-facebook-f {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+.footer-col-two {
+  color: #ffffff;
+  margin: 20px 0px;
+}
+
+.footer-input-cont {
+  width: 80%;
+}
+
+.divider {
+  width: 90%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 30px auto;
+}
+
+.f-tip {
+  color: #ffffff;
+  gap: 20%;
+}
+
+.globe-icon i {
+  color: black;
+  -webkit-text-stroke: 1px #ffffff;
+  margin-left: 12px;
+}
+
+/* footer responsiveness */
+@media screen and (max-width: 920px) {
+  .footer-row {
+    /* display: block; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+  }
+  .footer-col-one {
+    width: 100%;
+    margin: 0px 10px;
+  }
+  .footer-col-two {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
